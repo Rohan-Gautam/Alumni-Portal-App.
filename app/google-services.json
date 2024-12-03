@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "527650089426",
+    "project_id": "alumni-portal-app",
+    "storage_bucket": "alumni-portal-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527650089426:android:1860b21bc629ebc8d5800b",
+        "android_client_info": {
+          "package_name": "com.example.alumniportalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1a4XKZ-OqeL74FAgEzBzZZjpPCOkih24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

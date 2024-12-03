@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/vit_bhopal"
+        android:contentDescription="Sample Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_long_text"
+        app:layout_constraintHeight_percent="0.4" />
+
+    <!-- Long text below the image -->
+    <TextView
+        android:id="@+id/tv_long_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Welcome to the VIT Bhopal Alumni Portal App!
+
+This app serves as a dedicated space for alumni of VIT Bhopal to stay connected with their alma mater and showcase their personal and professional journey. With the Alumni Portal App, you can view and update your profile, highlighting your achievements and milestones since graduation.
+
+The app is designed to keep you connected with the VIT Bhopal community and ensure that you always have a place to share your story. Whether you’re catching up on campus memories or staying updated with fellow alumni, this platform makes it simple and accessible.
+
+Key Feature:
+
+User Profile Management: View and manage your alumni profile to showcase your professional growth and accomplishments.
+This app is a step toward maintaining the strong bond between VIT Bhopal and its alumni, keeping the spirit of community and pride alive long after graduation.
+
+Stay connected and proud to be part of the ever-growing VIT Bhopal family!"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button to go to LoginActivity -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Login"
+        app:layout_constraintTop_toBottomOf="@id/tv_long_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
